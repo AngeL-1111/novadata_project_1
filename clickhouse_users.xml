@@ -1,0 +1,12 @@
+<yandex>
+  <users>
+    <default>
+      <password>12345</password>
+      <networks>
+        <ip>::/0</ip> <!-- Разрешает подключение откуда угодно -->
+      </networks>
+      <profile>default</profile>
+      <quota>default</quota>
+    </default>
+  </users>
+</yandex>
