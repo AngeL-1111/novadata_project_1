@@ -1,0 +1,92 @@
+[
+    {
+        "user_id": 123,
+        "event_type": "purchase",
+        "event_time": "2024-01-20T10:00:00",
+        "user_info": {
+            "email": "user1@example.com",
+            "registration_date": "2023-12-01T10:00:00"
+        }
+    },
+    {
+        "user_id": 124,
+        "event_type": "login",
+        "event_time": "2024-01-21T09:30:00",
+        "user_info": {
+            "email": "user2@example.com",
+            "registration_date": "2023-12-02T12:00:00"
+        }
+    },
+    {
+        "user_id": 125,
+        "event_type": "signup",
+        "event_time": "2024-01-19T14:15:00",
+        "user_info": {
+            "email": "user3@example.com",
+            "registration_date": "2023-12-03T11:45:00"
+        }
+    },
+    {
+        "user_id": 126,
+        "event_type": "purchase",
+        "event_time": "2024-01-20T16:00:00",
+        "user_info": {
+            "email": "user4@example.com",
+            "registration_date": "2023-12-04T09:00:00"
+        }
+    },
+    {
+        "user_id": 127,
+        "event_type": "login",
+        "event_time": "2024-01-22T10:00:00",
+        "user_info": {
+            "email": "user5@example.com",
+            "registration_date": "2023-12-05T10:00:00"
+        }
+    },
+    {
+        "user_id": 128,
+        "event_type": "signup",
+        "event_time": "2024-01-22T11:30:00",
+        "user_info": {
+            "email": "user6@example.com",
+            "registration_date": "2023-12-06T13:00:00"
+        }
+    },
+    {
+        "user_id": 129,
+        "event_type": "purchase",
+        "event_time": "2024-01-23T15:00:00",
+        "user_info": {
+            "email": "user7@example.com",
+            "registration_date": "2023-12-07T08:00:00"
+        }
+    },
+    {
+        "user_id": 130,
+        "event_type": "login",
+        "event_time": "2024-01-23T16:45:00",
+        "user_info": {
+            "email": "user8@example.com",
+            "registration_date": "2023-12-08T10:00:00"
+        }
+    },
+    {
+        "user_id": 131,
+        "event_type": "purchase",
+        "event_time": "2024-01-24T12:00:00",
+        "user_info": {
+            "email": "user9@example.com",
+            "registration_date": "2023-12-09T14:00:00"
+        }
+    },
+    {
+        "user_id": 132,
+        "event_type": "signup",
+        "event_time": "2024-01-24T18:30:00",
+        "user_info": {
+            "email": "user10@example.com",
+            "registration_date": "2023-12-10T10:00:00"
+        }
+    }
+]
