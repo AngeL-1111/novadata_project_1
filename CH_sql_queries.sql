@@ -18,9 +18,9 @@ TTL event_time + INTERVAL 30 DAY;  -- Автоудаление данных ст
 CREATE TABLE agg_count (
 	event_date Date,
 	event_type String,
-    uniqUsers AggregateFunction(uniqState, UInt32),
-    sumPoints AggregateFunction(sumState, UInt32),
-    cntActions AggregateFunction(countState)
+    uniqUsers AggregateFunction(uniq, UInt32),
+    sumPoints AggregateFunction(sum, UInt32),
+    cntActions AggregateFunction(count, UInt32)
     )
 ENGINE = AggregatingMergeTree()
 PARTITION BY toYYYYMMDD(event_date) 
@@ -67,12 +67,12 @@ select count(*) from agg_count;
 
 -- 2. Запрос на агрегацию по дням и по типам событий
 select
-    toDate(event_time) as event_date, 
+    event_date, 
 	event_type,
-    uniqExact(user_id) as uniq_users, 
-    sum(points_spent) as total_spent, 
-    count() as total_actions
-from user_events
+    uniqMerge(uniqUsers) as uniq_users, 
+    sumMerge(sumPoints) as total_spent, 
+    countMerge(cntActions) as total_actions
+from agg_count
 group by event_date, event_type
 order by event_date, event_type;
 
